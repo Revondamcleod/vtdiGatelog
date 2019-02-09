@@ -16,5 +16,40 @@ namespace vtdiGatelog
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("User Botton Selected");
+        }
+
+        private void gateLogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Gate Log Botton Selected");
+        }
+
+        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Reports Botton Selected");
+        }
+
+        private void logInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LogInForms logIn = new LogInForms();
+            logIn.MdiParent = this;
+            logIn.Show();
+
+        }
+
+        private void gateInOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GateInOut log = new GateInOut();
+            log.MdiParent = this;
+            log.Show();
+        }
     }
 }
