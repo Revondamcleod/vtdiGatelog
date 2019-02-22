@@ -39,6 +39,8 @@ namespace vtdiGatelog
 
         private void logInToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //ShowLogInForm();
+
             LogInForms logIn = new LogInForms();
             logIn.MdiParent = this;
             logIn.Show();
@@ -47,9 +49,17 @@ namespace vtdiGatelog
 
         private void gateInOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //if (this.isLoggedIn)
+
+
             GateInOut log = new GateInOut();
-            log.MdiParent = this;
-            log.Show();
+            //log.MdiParent = this;
+            //log.Show();
+            //}
+            //else{
+
+
+            //}
         }
     }
 }
