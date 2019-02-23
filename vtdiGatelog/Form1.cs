@@ -30,6 +30,7 @@ namespace vtdiGatelog
         private void gateLogToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Gate Log Botton Selected");
+
         }
 
         private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace vtdiGatelog
             //if (this.isLoggedIn)
 
 
-            GateInOut log = new GateInOut();
+            GateLogForm log = new GateLogForm();
             //log.MdiParent = this;
             //log.Show();
             //}
